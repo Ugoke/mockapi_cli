@@ -1,6 +1,6 @@
 [project]
 name = "mockapi"
-version = "0.0.1"
+version = "0.0.2"
 description = "MockAPI CLI — a local tool for creating mock endpoints in Django"
 authors = [
     { name = "Ugoke" }

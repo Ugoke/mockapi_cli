@@ -194,7 +194,7 @@ def on_fail_response(mock: dict[str, Any], errs: Any, data) -> HttpResponse:
             content_type="application/json",
         )
     try:
-        payload = _get_or_generate_response(of, errs, user_response=data)
+        payload = _get_or_generate_response(data=of, errs=errs, user_response=data)
         status = of.get("status", 400)
         return _make_response(payload, status)
     except Exception:
